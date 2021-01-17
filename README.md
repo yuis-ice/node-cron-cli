@@ -5,7 +5,7 @@ Command Line Implementation for Node Cron Under 20 Lines.
 
 ## Quick Start
 
-This will execute your specified command `pwd` each 5 seconds.
+This will execute your specified command `pwd` each 2 seconds.
 
 ```
 ./cron-cli.js -p "*/2 * * * * *" -e "pwd" --log
