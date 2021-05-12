@@ -8,14 +8,25 @@ Command Line Implementation for Node Cron Under 20 Lines.
 This will execute your specified command `pwd` each 2 seconds.
 
 ```
-./cron-cli.js -p "*/2 * * * * *" -e "pwd" --log
+$ croncli -p "*/2 * * * * *" -e "pwd" --log
+```
+
+The output be like:
+
+```
+Jobs started...
+[*/2 * * * * *] Job fired: 05/12/2021, 08:42:28 PM GMT+9
+/home/ubuntu
+[*/2 * * * * *] Job fired: 05/12/2021, 08:42:30 PM GMT+9
+/home/ubuntu
+[*/2 * * * * *] Job fired: 05/12/2021, 08:42:32 PM GMT+9
+/home/ubuntu
 ```
 
 ## Installation
 
 ```
-git clone https://github.com/yuis-ice/node-cron-cli.git && cd node-cron-cli && chmod 755 ./cron-cli.js
-npm i
+npm i --global node-cron-cli
 ```
 
 ## Examples
